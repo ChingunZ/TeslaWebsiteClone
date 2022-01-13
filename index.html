@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        header {
+            width: 100%;
+            background-color: transparent;
+            position: fixed; /*  An element with position: fixed; is positioned relative to the viewport,
+             which means it always stays in the same place even if the page is scrolled. The top, right, 
+             bottom, and left properties are used to position the element.  */
+        }
+
+        #logo {
+            height: 50px;
+            width: 150px;
+            padding-right: 240px;
+        }
+
+        #unordered {
+            display: flex; /* Display flex makes it so that everything included in the code gets set up in a 
+            order/list. */
+            list-style-type: none; /* this changes the list style type to square or circle, and also use
+            none to get rid of it*/
+            padding-left: 0;
+        }
+
+        .service {
+            position: relative; /* position: relative places an element 
+            relative to its current position without changing the layout around it */
+            left: 60px;
+            padding-right: 30px;
+            font-family: sans-serif;
+
+
+        }
+
+        .service:hover {
+            background: transparent;
+            color: gray;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        #unordered2 {
+            position: relative;
+            left: 200px;
+            display: flex;
+            list-style-type: none;
+        }
+
+        .services {
+            padding-right: 30px;
+            font-family: sans-serif;
+            position: relative;
+            
+        }
+        .services:hover {
+            background: transparent;
+            color: gray;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .ModelID {
+           text-align: center;
+            font-size: 50px;
+            font-family: sans-serif;
+            color: rgb(59, 56, 56);
+        }
+
+        .ModelDesc {
+            text-align: center;
+        }
+
+        #delivery {
+            text-decoration: underline;
+        }
+        #delivery:hover {
+            background: transparent;
+            color: gray;
+            border-radius: 30px;
+        }
+        .ModelDesc {
+            position: relative;
+            bottom: 40px;
+            color: dimgray
+        }
+        .ModelDesc:hover {
+            background: transparent;
+            color: gray;
+            border-radius: 30px;
+        }
+
+        .buttons {
+            position: relative;
+            left: 400px;
+            top: 450px;
+            border-radius: 22px;
+            font-size: 18px;
+            font-weight: 200;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 15px;
+            height: 45px;
+            width: 275px;
+
+        }
+
+        #custom {
+            background-color: transparent;
+            color: black;  
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+
+        #existing {
+
+            background-color: transparent;
+            color: white;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        .displayflex {
+            display: flex;
+        }
+
+        .bg-image {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition-duration: 4s;
+            transition-delay: 2s;
+        }
+
+        .img1 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/56cb8c41-e898-44ce-b6b7-fe9b9a05f529/bvlatuR/std/1200x628/MS-Social);
+        }
+
+        .img2 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/197be9d8-7cf6-49b8-a711-e56237fa874a/bvlatuR/std/1200x628/rhd-model-3-social);
+        }
+
+        .img3 {
+            background-image: url(https://www.tesla.com/assets/img/my_fb_s.jpg);
+        }
+
+        .img4 {
+            background-image: url(https://www.tesla.com/sites/default/files/images/design-solar-panels-social.jpg);
+        }
+
+        .img5 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/2d6d1f7e-4462-442a-ba8e-d70dec628948/bvlatuR/std/2880x1800/powerwall-energy-storage-desktop);
+        }
+
+        .img6 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/da705069-91b5-41cb-86f3-86a585c6fdf3/bvlatuR/std/2880x1800/MX-Hero-Desktop)
+        }
+        .companyinfo {
+            display: flex;
+            position: relative;
+            left: 450px;
+            top: 460px;
+            list-style-type: none;
+        }
+        .Footers {
+            margin-left:  10px;
+        }
+    </style>
+
+</head>
+
+<body class="one" id="mainbody">
+    <header>
+        <div class="displayflex">
+
+            <img id="logo" src="https://www.logo.wine/a/logo/Tesla%2C_Inc./Tesla%2C_Inc.-Wordmark-Black-Logo.wine.svg">
+            <ul id="unordered">
+                <li class="service">Model S </li>
+                <li class="service">Model 3 </li>
+                <li class="service">Model Y </li>
+                <li class="service">Model X </li>
+                <li class="service">Solar Roofs </li>
+                <li class="service">Solar Panels </li>
+            </ul>
+
+            <ul id="unordered2">
+                <li class="services" id="marginleft">Shop</li>
+                <li class="services">Account</li>
+                <li class="services">Menu</li>
+            </ul>
+        </div>
+        <div>
+
+            <body>
+                <p class="ModelID">Model X</p>
+                <p class="ModelDesc">Order Online for <span id="delivery">Touchless Delivery</span></p>
+
+
+            </body>
+
+        </div>
+        <div>
+
+            <footer>
+                <button class="buttons" id="custom">Custom Order</button>
+                <button class="buttons" id="existing">Existing Order</button>
+                <div class="companyinfo">
+                    <p class="Footers">Tesla © 2022</p>
+                    <p class="Footers">Privacy & Legal</p>
+                    <p class="Footers">Contact</p>
+                    <p class="Footers">Career</p>
+                    <p class="Footers">News</p>
+                    <p class="Footers">Engage</p>
+                    <p class="Footers">Location</p>
+
+
+
+                </div>
+            </footer>
+        </div>
+    </header>
+
+
+
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div>
+
+
+
+
+
+</body>
+
+</html>
