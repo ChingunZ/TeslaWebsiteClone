@@ -1,0 +1,223 @@
+html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        .headerPart {
+            width: 100%;
+            position: fixed; /*  An element with position: fixed; is positioned relative to the viewport,
+             which means it always stays in the same place even if the page is scrolled. The top, right, 
+             bottom, and left properties are used to position the element.  */
+        }
+        .displayFlex {
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo {
+            height: 50px;
+            width: 150px;
+            /* padding-right: 240px; */
+        }
+        #unordered {
+            display: flex; /* Display flex makes it so that everything included in the code gets set up in a 
+            order/list. */
+            list-style-type: none; /* this changes the list style type to square or circle, and also use
+            none to get rid of it*/
+            padding-left: 0;
+        }
+        .service {
+            position: relative; /* position: relative places an element 
+            relative to its current position without changing the layout around it */
+            left: 60px;
+            padding-right: 30px;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 21px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .service:hover {
+            background: transparent;
+            color: gray;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        #unordered2 {
+            position: relative;
+            /* left: 200px; */
+            display: flex;
+            list-style-type: none;
+        }
+        .services {
+            padding-right: 30px;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            position: relative;
+        }
+        .services:hover {
+            background: transparent;
+            color: gray;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .imgOneContent {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .ModelID {
+            margin-top: 80px;
+            font-size: 50px;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: rgb(59, 56, 56);
+        }
+        #whiteModelID {
+            margin-top: 80px;
+            font-size: 50px;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: wheat;
+        }
+        .ModelDesc {
+            position: relative;
+            color: black;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        #whiteModelDesc {
+            position: relative;
+            color: wheat;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        #delivery {
+            text-decoration: underline;
+            color: rgb(0, 0, 0);
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        #delivery:hover {
+            cursor: pointer;
+            background: transparent;
+            color: rgb(73, 71, 71);
+            border-radius: 30px;
+        }
+        .bottomTexts {
+            margin-top: 10px;
+        }
+        .buttons {
+            border-radius: 22px;
+            font-size: 18px;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 15px;
+            height: 38px;
+            width: 255px;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 25px;
+        }
+        .buttonsTwo {
+            border-radius: 22px;
+            font-size: 13px;
+            font-weight: 420;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 15px;
+            height: 38px;
+            padding-top: 10px;
+            padding-bottom: 25px;
+            width: 255px;
+            border: none;
+            color: white;
+            background-color: black;
+        }
+        .buttonsTwo:hover {
+            background-color: rgba(0, 0, 0, .8);
+            cursor: pointer;
+        }
+        .buttons:hover {
+            cursor: pointer;
+        }
+        .buttonPart {
+            text-align: center;
+            margin-top: 750px;
+        }
+        .buttonPartTwo {
+            text-align: center;
+            margin-top: 700px;
+        }
+        #custom {
+            background-color: transparent;
+            color: black;  
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+        #custom:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        #existing {
+            background-color: transparent;
+            color: white;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        #existing:hover {
+            background-color: rgba(3, 3, 3, .4);
+        }
+        .companyInfo {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 85px;
+            color: black;
+            font-family: "Gotham SSm", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+        }
+        .Footers {
+            margin-left:  10px;
+        }
+        .Footers:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .bg-image {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition-duration: 4s;
+            transition-delay: 2s;
+        }
+
+        .img1 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/32e5e0f3-5c04-42ef-8f8f-c6b1c26f8a9e/bvlatuR/std/2880x1800/ms-main-hero-desktop);
+        }
+
+        .img2 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ca583b8c-7cfa-4202-9be2-1d3f0e3f24cf/bvlatuR/std/2880x1800/M3-Homepage-RHD-D);
+        }
+
+        .img3 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/644990f0-5e42-45a1-be24-d7b78cae2444/bvlatuR/std/3296x1798/model-y-homepage-desktop);
+        }
+
+        .img4 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/45992f1c-a33a-4a04-b1f0-338aff182f8e/bvlatuR/std/2880x1800/_25-Hero-D);
+        }
+
+        .img5 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/2d6d1f7e-4462-442a-ba8e-d70dec628948/bvlatuR/std/2880x1800/powerwall-energy-storage-desktop);
+        }
+
+        .img6 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/da705069-91b5-41cb-86f3-86a585c6fdf3/bvlatuR/std/2880x1800/MX-Hero-Desktop)
+        }
+        .img7 {
+            background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories);
+        }
+        @media (max-width: 970px) {
+            .listOne {
+                display: none;
+            }
+            .displayFlex {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        @media (max-width: 500px) {
+            .displayFlex {
+                display: flex;
+                justify-content: center;
+            }   
+        }
